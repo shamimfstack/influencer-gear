@@ -1,0 +1,74 @@
+/* shared styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* header style starts here */
+header {
+    background-color: aquamarine;
+    padding: 50px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-title {}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item ul li {
+    padding: 0 20px;
+}
+
+/* header style ends here */
+
+
+
+
+
+/* responsive design starts here */
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+    nav, .nav-item, .nav-item ul {
+        flex-direction: column;
+    }
+
+    .nav-item ul li {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 920px) {
+    
+}
+/* responsive design ends here */
+
+
+
