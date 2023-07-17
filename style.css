@@ -18,16 +18,33 @@ a {
     color: #000;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* background-color: rgb(189, 243, 243); */
+}
+
+.btn-primary {
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* header style starts here */
 header {
-    background-color: aquamarine;
+    
+    background-position: bottom right;
     padding: 50px 0;
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -47,6 +64,47 @@ nav {
     padding: 0 20px;
 }
 
+.btn-primary {
+    color: #fff;
+    font-weight: 700;
+    padding: 8px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.banner-content {
+    padding-right: 20px;
+    width: 50%;
+}
+
+.banner-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3A3A3A;
+}
+
+.banner-description {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.banner-img {
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    width: 50%;
+}
+
 /* header style ends here */
 
 
@@ -56,17 +114,37 @@ nav {
 /* responsive design starts here */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
-    nav, .nav-item, .nav-item ul {
+    nav, .nav-item, .nav-item ul, .banner {
         flex-direction: column;
     }
 
     .nav-item ul li {
         padding: 20px 0;
     }
+
+    .banner-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 920px) {
-    
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
 }
 /* responsive design ends here */
 
