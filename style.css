@@ -6,7 +6,10 @@
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 ul {
@@ -22,6 +25,12 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     /* background-color: rgb(189, 243, 243); */
+}
+
+.div-clear {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .btn-primary {
@@ -78,7 +87,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    margin: 50px 0;
 }
 
 .banner-content {
@@ -102,8 +111,88 @@ nav {
 .banner-img {
     background-image: url('images/Circle\ design.svg');
     background-repeat: no-repeat;
+    /* background-size: contain; */
     width: 50%;
 }
+
+/* sponsor section starts here */
+.sponsor {
+    margin: 60px auto 0 auto;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+/* sponsor section ends here */
+
+/* collection section starts here */
+.collections {
+    max-width: 1000px;
+    margin: 100px auto 0 auto;
+
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 699;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collections-item-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.collection-item {
+    padding: 14px;
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.item-img {}
+
+.item-heading {
+    color: #18191F;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.item-price {
+    font-family: Inter;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.item-rating {
+    font-family: Roboto;
+    color: #5E6366;
+    margin-bottom: 5px;
+}
+
+.collection-item p {
+    color: #787885;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%; /* 20.02px */
+    letter-spacing: 0.252px;
+}
+
+.see-more-text {
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    text-align: right;
+    margin-top: 50px;
+}
+
+
+/* collection section ends here */
 
 /* header style ends here */
 
@@ -114,7 +203,7 @@ nav {
 /* responsive design starts here */
 /* for mobile devices */
 @media screen and (max-width: 576px) {
-    nav, .nav-item, .nav-item ul, .banner {
+    nav, .nav-item, .nav-item ul {
         flex-direction: column;
     }
 
@@ -122,19 +211,43 @@ nav {
         padding: 20px 0;
     }
 
+     .banner {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .banner-content {
+    text-align: center;
+}
+
+    .banner-img {
+        width: 100%;
+        padding: 30px;
+    }
+
     .banner-content {
         width: 100%;
         padding: 20px 30px;
     }
 
-    .banner-img {
-        width: 100%;
+    .sponsor {
+    flex-wrap: wrap;
+    padding: 30px;
+
+}
+
+    .collections-item-container {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-item {
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 920px) {
     .banner {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .banner-content {
@@ -143,6 +256,14 @@ nav {
     }
 
     .banner-img {
+        width: 100%;
+    }
+
+    .collections-item-container {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-item {
         width: 100%;
     }
 }
