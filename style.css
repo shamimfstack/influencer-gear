@@ -326,11 +326,13 @@ line-height: 24px;
     .features-img {
         width: 100%;
         padding: 0 30px;
+        
     }
     
     .features-content {
         width: 100%;
         padding: 0 30px;
+        margin-bottom: 20px;
     }
 }
 
@@ -344,16 +346,12 @@ line-height: 24px;
         padding: 20px 30px;
     }
 
-    .banner-img {
+    .banner-img, .collection-item {
         width: 100%;
     }
 
     .collections-item-container {
         grid-template-columns: 1fr;
-    }
-
-    .collection-item {
-        width: 100%;
     }
 }
 /* responsive design ends here */
