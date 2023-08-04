@@ -257,7 +257,16 @@ font-weight: 700;
 line-height: 24px;
 }
 
-.media-links {}
+.media-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.media-links a {
+    color: #fff;
+}
 /* footer section ends here*/
 
 /* header style ends here */
